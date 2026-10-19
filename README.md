@@ -116,8 +116,8 @@ FlashFlood-AI/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/flash-flood-prediction.git
-cd flash-flood-prediction
+git clone https://github.com/samarthofficial14-byte/flash-flod-prediction.git
+cd flash-flod-prediction
 ```
 
 ### 2. Set up virtual environment and install dependencies
