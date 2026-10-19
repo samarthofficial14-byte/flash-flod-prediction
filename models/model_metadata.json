@@ -1,0 +1,107 @@
+{
+  "best_model": "Random Forest",
+  "features": [
+    "rainfall_intensity_mmh",
+    "rainfall_24h_mm",
+    "river_water_level_pct",
+    "soil_moisture_pct",
+    "slope_degrees",
+    "vegetation_index",
+    "elevation_m"
+  ],
+  "tier_labels": [
+    "Low",
+    "Moderate",
+    "High",
+    "Critical"
+  ],
+  "metrics": {
+    "accuracy": 84.73,
+    "f1_macro": 84.35,
+    "f1_weighted": 84.73,
+    "classification_report": {
+      "Low": {
+        "precision": 0.8455598455598455,
+        "recall": 0.8884381338742393,
+        "f1-score": 0.8664688427299704,
+        "support": 493.0
+      },
+      "Moderate": {
+        "precision": 0.8718487394957983,
+        "recall": 0.8011583011583011,
+        "f1-score": 0.8350100603621731,
+        "support": 518.0
+      },
+      "High": {
+        "precision": 0.7065217391304348,
+        "recall": 0.9154929577464789,
+        "f1-score": 0.7975460122699386,
+        "support": 71.0
+      },
+      "Critical": {
+        "precision": 1.0,
+        "recall": 0.7777777777777778,
+        "f1-score": 0.875,
+        "support": 18.0
+      },
+      "accuracy": 0.8472727272727273,
+      "macro avg": {
+        "precision": 0.8559825810465196,
+        "recall": 0.8457167926391993,
+        "f1-score": 0.8435062288405205,
+        "support": 1100.0
+      },
+      "weighted avg": {
+        "precision": 0.8514924494528074,
+        "recall": 0.8472727272727273,
+        "f1-score": 0.8473455614587697,
+        "support": 1100.0
+      }
+    }
+  },
+  "feature_importances": {
+    "rainfall_intensity_mmh": 32.31,
+    "rainfall_24h_mm": 31.01,
+    "river_water_level_pct": 15.18,
+    "soil_moisture_pct": 11.37,
+    "slope_degrees": 4.45,
+    "vegetation_index": 2.93,
+    "elevation_m": 2.75
+  },
+  "confusion_matrix": [
+    [
+      438,
+      55,
+      0,
+      0
+    ],
+    [
+      80,
+      415,
+      23,
+      0
+    ],
+    [
+      0,
+      6,
+      65,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      14
+    ]
+  ],
+  "model_comparison": {
+    "Random Forest": {
+      "accuracy": 84.73,
+      "f1_weighted": 84.73
+    },
+    "Gradient Boosting": {
+      "accuracy": 84.09,
+      "f1_weighted": 84.05
+    }
+  }
+}
